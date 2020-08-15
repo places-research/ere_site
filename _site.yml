@@ -1,0 +1,48 @@
+output_dir: '.'
+navbar:
+  title: "ENSINO REMOTO EMERGENCIAL"
+  # type: inverse
+  left:
+    - text: "Fundamentos do ERE"
+      href: index.html
+    - text: "Gestao da Qualidade"
+      href: qualidade.html
+    - text: "Tratamento de dados - R"
+      href: data.html
+    - text: "GIS e analise espacial"
+      href: gis.html
+    - text: "QGIS, ArcGIS, Geoda" 
+      href: qgis.html
+    - text: "Blog"
+      href: blog.html
+    - text: "Contato"
+      href: contact.html
+  right:
+    - icon: fa-github fa-lg
+      href: https://github.com/places-research/ere_site
+bibliography: biblio.bib
+base_url: https://places-research.github.io/ere_site
+collections:
+  blog/:
+    permalink: /blog/{slug}
+    filter: tag:blog
+    share: [twitter, linkedin]
+twitter:
+  site: "@places-research"
+  creator: "@retaoliveira"
+repository_url: https://github.com/places-research/ere_data
+output:  
+   html_document:
+    self_contained: false
+    theme: flatly
+    highlight: textmate
+    mathjax: null
+    lib_dir: libs
+    css: styles.css
+    include:
+      in_header: head.html
+      after_body: footer.html
+    toc: true
+    toc_depth: 2
+    toc_float:
+      collapsed: false

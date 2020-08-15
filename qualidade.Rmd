@@ -1,0 +1,71 @@
+---
+title: "Gestão da Qualidade"
+author: "Contribuições - Renata Lúcia Magalhães de Oliveira e Paulo Sanches"
+output:
+  html_document:
+    toc_depth: 4
+    include:
+      in_header: head.html
+      after_body: footer.html
+    theme: flatly
+    highlight: textmate
+    lib_dir: libs
+    css: styles.css
+    logo: logo.jpg
+    toc_float:
+      collapsed: false
+---
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
+
+
+# **Estrutura da disciplina**
+
+### Instrumentos de aprendizagem na disciplina
+:::justa
+Esta disciplina será estruturada conforme unidades de ensino e com periodicidade em ciclos semanais. Propõe-se, com foco nos objetivos de aprendizagem centrados no estudante, as componentes apresentadas na Tabela 2.
+:::
+Tabela 2: Estrutura Semanal da disciplina
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE, results='asis'}
+library(dplyr)
+library(kableExtra)
+
+library(readr)
+tab1 <- read_delim("secXXI.csv", ";", escape_double = FALSE, trim_ws = TRUE)
+kable(tab1, escape = FALSE) %>%
+  kable_styling("striped", full_width = FALSE)
+```
+
+
+
+### Encargos da disciplina
+:::justa
+Os alunos deverão entregar 02 atividades semanais e participar dos momentos síncronos. O registro da frequência será realizada por meio da entrega das atividades semanais. Caso o aluno opte por não participar dos encontros síncronos, bastará a entrega das atividades semanais. Entretanto, caso os alunos não realizem a entrega de alguma das atividades, o registro da frequência será realizado pela sua presença no momento síncrono.
+:::
+### Instrumentos de avaliação
+
+A proposta avaliativa para esta disciplina é fundamentada nos objetivos de aprendizagem de cada componente.  Assim, as atividades, bem como pontuação, foram distribuídos por semanas. Toda semana será pontuada, não sendo necessário provas ao longo da disciplina. Semanalmente, os alunos terão 02 atividades: os CHECKPOINTS e as TAREFAS PRELIMINARES.  Os checkpoints serão momentos de verificação do conteúdo assimilado pelo aluno na semana, podendo ser apresentados na forma de fóruns, quizzes ou situações-problema. Já as TAREFAS PRELIMINARES são atividades preliminares que farão o aluno perceber o conteúdo que será ministrado na semana que ainda não se iniciou. Essas tarefas podem ser a gravação de um pequeno vídeo, uma foto, participação em fóruns, etc. A carga de trabalho está estruturada para fomentar a proposta de aprendizagem centrada no estudante. Em todas as atividades semanais, foram propostas rubricas (critérios) de avaliação para as atividades estruturadas. 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=TRUE, results='asis'}
+library(dplyr)
+library(kableExtra)
+library(readr)
+tab1 <- read_delim("quali.csv", ";", escape_double = FALSE, trim_ws = TRUE)
+kable(tab1, escape = FALSE) %>%
+  kable_styling("striped", full_width = FALSE)
+```
+
+### Condições para aprovação no curso   
+Para serem aprovados, cada aluno deve ter, no mínimo:
+
+75% de cumprimento da carga horária da disciplina, **E** 60 pontos   
+
+
+____
+
+# **Unidades**
+
+## Unidade 1
